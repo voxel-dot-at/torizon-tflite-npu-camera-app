@@ -1,0 +1,14 @@
+services:
+  tflite-npu-camera-app:
+    image: docker.io/euvoxel/tflite-npu-camera-app:latest
+    privileged: true
+    environment:
+      - CAPTURE_DEVICE=/dev/video2
+      - USE_HW_ACCELERATED_INFERENCE=1
+      - MINIMUM_SCORE=0.7
+    volumes:
+      - /dev:/dev
+      - /dev/dri:/dev/dri
+      - /tmp:/tmp
+      - /run/udev:/run/udev
+    restart: "no"
