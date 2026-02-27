@@ -1,7 +1,7 @@
 # tflite-npu-camera-app/Dockerfile
 # Thin app image: includes only your app code/models; all heavy deps come from tflite-npu-base.
 
-ARG TFLITE_NPU_BASE_IMAGE=docker.io/euvoxel/tflite-npu-base:latest
+ARG TFLITE_NPU_BASE_IMAGE=docker.io/voxeldotat/tflite-npu-base:latest
 FROM ${TFLITE_NPU_BASE_IMAGE}
 ARG IMAGE_ARCH=linux/arm64/v8
 

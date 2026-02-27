@@ -68,7 +68,7 @@ docker run --rm -it --privileged \
   -e CAPTURE_DEVICE=/dev/video2 \
   -e USE_HW_ACCELERATED_INFERENCE=1 \
   -e MINIMUM_SCORE=0.7 \
-  euvoxel/tflite-npu-camera-app:latest
+  voxeldotat/tflite-npu-camera-app:latest
 ```
 
 Adjust `CAPTURE_DEVICE` to the correct V4L2 node on the target device.
